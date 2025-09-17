@@ -1,0 +1,21 @@
+server:
+  port: 18080
+spring:
+  application:
+    name: springDataJpaDemo
+  datasource:
+    url: jdbc:mysql://localhost:3307/demo?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 15115671850.wzj
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    generate-ddl: false
+    show-sql: true
+
+minio:
+  endpoint: http://127.0.0.1:9000
+  access-key: minioadmin
+  secret-key: minioadminPwd
+  bucket: test-bucket
+  url-expiry: 1
